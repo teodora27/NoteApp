@@ -1,6 +1,6 @@
 ﻿namespace NoteApp
 {
-    partial class Form1
+    partial class NoteApp
     {
         /// <summary>
         /// Required designer variable.
@@ -28,10 +28,19 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.SuspendLayout();
+            // 
+            // NoteApp
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            this.Name = "NoteApp";
+            this.Text = "NoteApp";
+            this.Load += new System.EventHandler(this.NoteApp_Load);
+            this.ResumeLayout(false);
+
         }
 
         #endregion
