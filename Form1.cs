@@ -41,6 +41,9 @@ namespace NoteApp
 
         private void LoadButton_Click(object sender, EventArgs e)
         {
+            titleBox.Text = notes.Rows[previousNotes.CurrentCell.RowIndex].ItemArray[0].ToString();
+            noteBox.Text = notes.Rows[previousNotes.CurrentCell.RowIndex].ItemArray[1].ToString();
+            editing = true;
 
         }
 
@@ -52,7 +55,18 @@ namespace NoteApp
 
         private void SaveButton_Click(object sender, EventArgs e)
         {
-
+            if(editing)
+            {
+                notes.Rows[previousNotes.CurrentCell.RowIndex]["Titlu"] = titleBox.Text;
+                notes.Rows[previousNotes.CurrentCell.RowIndex]["Scrie"] = noteBox.Text;
+            }
+            else
+            {
+                notes.Rows.Add(titleBox.Text, noteBox.Text);
+            }
+            titleBox.Text = "";
+            noteBox.Text = "";
+            editing = false;
         }
     }
 }
