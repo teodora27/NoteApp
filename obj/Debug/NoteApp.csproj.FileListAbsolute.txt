@@ -1,0 +1,11 @@
+C:\!Proiecte\note c#\NoteApp\NoteApp\bin\Debug\NoteApp.exe.config
+C:\!Proiecte\note c#\NoteApp\NoteApp\bin\Debug\NoteApp.exe
+C:\!Proiecte\note c#\NoteApp\NoteApp\bin\Debug\NoteApp.pdb
+C:\!Proiecte\note c#\NoteApp\NoteApp\obj\Debug\NoteApp.csproj.AssemblyReference.cache
+C:\!Proiecte\note c#\NoteApp\NoteApp\obj\Debug\NoteApp.csproj.SuggestedBindingRedirects.cache
+C:\!Proiecte\note c#\NoteApp\NoteApp\obj\Debug\NoteApp.NoteApp.resources
+C:\!Proiecte\note c#\NoteApp\NoteApp\obj\Debug\NoteApp.Properties.Resources.resources
+C:\!Proiecte\note c#\NoteApp\NoteApp\obj\Debug\NoteApp.csproj.GenerateResource.cache
+C:\!Proiecte\note c#\NoteApp\NoteApp\obj\Debug\NoteApp.csproj.CoreCompileInputs.cache
+C:\!Proiecte\note c#\NoteApp\NoteApp\obj\Debug\NoteApp.exe
+C:\!Proiecte\note c#\NoteApp\NoteApp\obj\Debug\NoteApp.pdb
