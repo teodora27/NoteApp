@@ -12,6 +12,9 @@ namespace NoteApp
 {
     public partial class NoteApp : Form
     {
+        DataTable notes = new DataTable();
+        bool editing = false;  
+        
         public NoteApp()
         {
             InitializeComponent();
@@ -19,12 +22,21 @@ namespace NoteApp
 
         private void NoteApp_Load(object sender, EventArgs e)
         {
-            
+            notes.Columns.Add("Titlu");
+            notes.Columns.Add("Scrie");
+
+            previousNotes.DataSource = notes;
         }
 
         private void DeleteButton_Click(object sender, EventArgs e)
         {
-
+            try
+            {
+                notes.Rows[previousNotes.CurrentCell.RowIndex].Delete();
+            }
+            catch(Exception ex) { 
+                Console.WriteLine("Not a valid note!");
+            }
         }
 
         private void LoadButton_Click(object sender, EventArgs e)
@@ -34,7 +46,8 @@ namespace NoteApp
 
         private void NewNoteButton_Click(object sender, EventArgs e)
         {
-
+            titleBox.Text = "";
+            noteBox.Text = "";
         }
 
         private void SaveButton_Click(object sender, EventArgs e)
