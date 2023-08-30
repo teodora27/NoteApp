@@ -28,32 +28,35 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            this.titleBox = new System.Windows.Forms.TextBox();
+            this.noteBox = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.PreviousNotes = new System.Windows.Forms.DataGridView();
-            this.LoadButton = new System.Windows.Forms.Button();
-            this.DeleteButton = new System.Windows.Forms.Button();
-            this.SaveButton = new System.Windows.Forms.Button();
-            this.NewNoteButton = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.PreviousNotes)).BeginInit();
+            this.previousNotes = new System.Windows.Forms.DataGridView();
+            this.loadButton = new System.Windows.Forms.Button();
+            this.deleteButton = new System.Windows.Forms.Button();
+            this.saveButton = new System.Windows.Forms.Button();
+            this.newNoteButton = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.previousNotes)).BeginInit();
             this.SuspendLayout();
             // 
-            // textBox1
+            // titleBox
             // 
-            this.textBox1.Location = new System.Drawing.Point(453, 30);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(335, 22);
-            this.textBox1.TabIndex = 0;
+            this.titleBox.Location = new System.Drawing.Point(453, 30);
+            this.titleBox.Name = "titleBox";
+            this.titleBox.Size = new System.Drawing.Size(335, 22);
+            this.titleBox.TabIndex = 0;
             // 
-            // textBox2
+            // noteBox
             // 
-            this.textBox2.Location = new System.Drawing.Point(453, 81);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(335, 393);
-            this.textBox2.TabIndex = 1;
+            this.noteBox.Location = new System.Drawing.Point(453, 81);
+            this.noteBox.Multiline = true;
+            this.noteBox.Name = "noteBox";
+            this.noteBox.Size = new System.Drawing.Size(335, 393);
+            this.noteBox.TabIndex = 1;
             // 
             // label1
             // 
@@ -75,64 +78,88 @@
             this.label2.Text = "Scrie:";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // PreviousNotes
+            // previousNotes
             // 
-            this.PreviousNotes.BackgroundColor = System.Drawing.Color.White;
-            this.PreviousNotes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.PreviousNotes.Location = new System.Drawing.Point(12, 12);
-            this.PreviousNotes.Name = "PreviousNotes";
-            this.PreviousNotes.RowHeadersWidth = 51;
-            this.PreviousNotes.RowTemplate.Height = 24;
-            this.PreviousNotes.Size = new System.Drawing.Size(420, 311);
-            this.PreviousNotes.TabIndex = 4;
+            this.previousNotes.BackgroundColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.previousNotes.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.previousNotes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.previousNotes.DefaultCellStyle = dataGridViewCellStyle2;
+            this.previousNotes.Location = new System.Drawing.Point(12, 12);
+            this.previousNotes.Name = "previousNotes";
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.previousNotes.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            this.previousNotes.RowHeadersWidth = 51;
+            this.previousNotes.RowTemplate.Height = 24;
+            this.previousNotes.Size = new System.Drawing.Size(420, 311);
+            this.previousNotes.TabIndex = 4;
             // 
-            // LoadButton
+            // loadButton
             // 
-            this.LoadButton.BackColor = System.Drawing.Color.White;
-            this.LoadButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LoadButton.Location = new System.Drawing.Point(20, 341);
-            this.LoadButton.Name = "LoadButton";
-            this.LoadButton.Size = new System.Drawing.Size(201, 62);
-            this.LoadButton.TabIndex = 5;
-            this.LoadButton.Text = "Load";
-            this.LoadButton.UseVisualStyleBackColor = false;
-            this.LoadButton.Click += new System.EventHandler(this.LoadButton_Click);
+            this.loadButton.BackColor = System.Drawing.Color.White;
+            this.loadButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.loadButton.Location = new System.Drawing.Point(20, 341);
+            this.loadButton.Name = "loadButton";
+            this.loadButton.Size = new System.Drawing.Size(201, 62);
+            this.loadButton.TabIndex = 5;
+            this.loadButton.Text = "Load";
+            this.loadButton.UseVisualStyleBackColor = false;
+            this.loadButton.Click += new System.EventHandler(this.LoadButton_Click);
             // 
-            // DeleteButton
+            // deleteButton
             // 
-            this.DeleteButton.BackColor = System.Drawing.Color.White;
-            this.DeleteButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DeleteButton.Location = new System.Drawing.Point(227, 341);
-            this.DeleteButton.Name = "DeleteButton";
-            this.DeleteButton.Size = new System.Drawing.Size(201, 62);
-            this.DeleteButton.TabIndex = 6;
-            this.DeleteButton.Text = "Delete";
-            this.DeleteButton.UseVisualStyleBackColor = false;
-            this.DeleteButton.Click += new System.EventHandler(this.DeleteButton_Click);
+            this.deleteButton.BackColor = System.Drawing.Color.White;
+            this.deleteButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.deleteButton.Location = new System.Drawing.Point(227, 341);
+            this.deleteButton.Name = "deleteButton";
+            this.deleteButton.Size = new System.Drawing.Size(201, 62);
+            this.deleteButton.TabIndex = 6;
+            this.deleteButton.Text = "Delete";
+            this.deleteButton.UseVisualStyleBackColor = false;
+            this.deleteButton.Click += new System.EventHandler(this.DeleteButton_Click);
             // 
-            // SaveButton
+            // saveButton
             // 
-            this.SaveButton.BackColor = System.Drawing.Color.White;
-            this.SaveButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SaveButton.Location = new System.Drawing.Point(227, 409);
-            this.SaveButton.Name = "SaveButton";
-            this.SaveButton.Size = new System.Drawing.Size(201, 62);
-            this.SaveButton.TabIndex = 7;
-            this.SaveButton.Text = "Save";
-            this.SaveButton.UseVisualStyleBackColor = false;
-            this.SaveButton.Click += new System.EventHandler(this.SaveButton_Click);
+            this.saveButton.BackColor = System.Drawing.Color.White;
+            this.saveButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.saveButton.Location = new System.Drawing.Point(227, 409);
+            this.saveButton.Name = "saveButton";
+            this.saveButton.Size = new System.Drawing.Size(201, 62);
+            this.saveButton.TabIndex = 7;
+            this.saveButton.Text = "Save";
+            this.saveButton.UseVisualStyleBackColor = false;
+            this.saveButton.Click += new System.EventHandler(this.SaveButton_Click);
             // 
-            // NewNoteButton
+            // newNoteButton
             // 
-            this.NewNoteButton.BackColor = System.Drawing.Color.White;
-            this.NewNoteButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.NewNoteButton.Location = new System.Drawing.Point(20, 409);
-            this.NewNoteButton.Name = "NewNoteButton";
-            this.NewNoteButton.Size = new System.Drawing.Size(201, 62);
-            this.NewNoteButton.TabIndex = 8;
-            this.NewNoteButton.Text = "New Note";
-            this.NewNoteButton.UseVisualStyleBackColor = false;
-            this.NewNoteButton.Click += new System.EventHandler(this.NewNoteButton_Click);
+            this.newNoteButton.BackColor = System.Drawing.Color.White;
+            this.newNoteButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.newNoteButton.Location = new System.Drawing.Point(20, 409);
+            this.newNoteButton.Name = "newNoteButton";
+            this.newNoteButton.Size = new System.Drawing.Size(201, 62);
+            this.newNoteButton.TabIndex = 8;
+            this.newNoteButton.Text = "New Note";
+            this.newNoteButton.UseVisualStyleBackColor = false;
+            this.newNoteButton.Click += new System.EventHandler(this.NewNoteButton_Click);
             // 
             // NoteApp
             // 
@@ -140,19 +167,19 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.ClientSize = new System.Drawing.Size(800, 486);
-            this.Controls.Add(this.NewNoteButton);
-            this.Controls.Add(this.SaveButton);
-            this.Controls.Add(this.DeleteButton);
-            this.Controls.Add(this.LoadButton);
-            this.Controls.Add(this.PreviousNotes);
+            this.Controls.Add(this.newNoteButton);
+            this.Controls.Add(this.saveButton);
+            this.Controls.Add(this.deleteButton);
+            this.Controls.Add(this.loadButton);
+            this.Controls.Add(this.previousNotes);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.noteBox);
+            this.Controls.Add(this.titleBox);
             this.Name = "NoteApp";
             this.Text = "NoteApp";
             this.Load += new System.EventHandler(this.NoteApp_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.PreviousNotes)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.previousNotes)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -160,15 +187,15 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox titleBox;
+        private System.Windows.Forms.TextBox noteBox;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.DataGridView PreviousNotes;
-        private System.Windows.Forms.Button LoadButton;
-        private System.Windows.Forms.Button DeleteButton;
-        private System.Windows.Forms.Button SaveButton;
-        private System.Windows.Forms.Button NewNoteButton;
+        private System.Windows.Forms.DataGridView previousNotes;
+        private System.Windows.Forms.Button loadButton;
+        private System.Windows.Forms.Button deleteButton;
+        private System.Windows.Forms.Button saveButton;
+        private System.Windows.Forms.Button newNoteButton;
     }
 }
 
